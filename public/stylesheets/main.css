@@ -1,0 +1,138 @@
+.jumbotron{
+    height: 100vh;
+    background: linear-gradient(#ffffffcb, #ffffffcb), url("Images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.jumbotron h4{
+    padding-top: 0;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 4px;
+}
+
+textarea{
+    width: 900px;
+    height: 400px;
+    border: 8px double black;
+    opacity: 0.7;
+    resize: none;
+}
+
+*:focus{
+    outline: none;
+    background: darkslategray;
+    color: blanchedalmond;
+    font-weight: bolder;
+}
+
+::placeholder{
+    text-align: center;
+    padding: 170px 0;
+    font-size: 25px;
+    opacity: 0.9;
+    font-family: 'Dosis', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 765px;
+    border: 3px solid;
+    font-family: 'Dosis', sans-serif;
+
+  }
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    padding-left: 3px ;
+    padding-right: 3px;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	  animation: typing 4s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+.late{
+  animation-name: ani1;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.late1{
+  animation: ani 1s 7s forwards;
+  opacity: 0;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+@keyframes ani{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes ani1{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0.7;
+  }
+}

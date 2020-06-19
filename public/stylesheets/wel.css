@@ -1,0 +1,68 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: url("Images/best.gif");
+    min-height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+h1{
+    margin-top: 130px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: blanchedalmond;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ani{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+.btn{
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 2px;
+    border: 2px solid;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes ani{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.d1:hover{
+    font-size: 20px;
+    transform: scale(1.1);
+}
+
+.yo{
+    transition: 0.4s;
+    padding-left: 5px;
+}
+
+.btn:hover .yo{
+    transform: rotate(360deg);
+}
