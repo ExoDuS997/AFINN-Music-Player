@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mood</title>
+    <link rel="stylesheet" href="\stylesheets\bootstrap.css">
+    <link rel="stylesheet" href="\stylesheets\emote.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="jumbotron text-center">
+        <div class="grid container" id="gri">
+            <div class="item1">    
+                <h4 class="display-4 hello">YOUR MOOD IS:</h4>
+                <br>
+                <img src="" alt="Emoji" id="myimg" class="rotateimg360">
+                <h5 class="display-5" id="res"></h5>
+                
+            </div>
+            <div id="item3">
+                <h4 class="playlist display-4" id="play">
+                    <span style="color:#FF0000">P</span>
+                    <span style="color:#66CC66">L</span>
+                    <span style="color:#FF9966">A</span>
+                    <span style="color:#ebb6b6">Y</span>
+                    <span style="color:#FF0066">L</span>
+                    <span style="color:#FF0000">I</span>
+                    <span style="color:#66CC66">S</span>
+                    <span style="color:#FF9966">T</span>
+                </h4>
+                <div id="eras">
+                    <br><h5 class="display-5" style="color:#DCE1DE;"> Language you prefer..</h5><br><br>
+                    <button class="btn btn-outline-primary" style="margin-right: 20px;" onclick="song1()">English</button>
+                    <button class="btn btn-outline-warning" style="margin-left: 20px ;" onclick="song2()">हिन्दी</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <a href="/main" class="btn btn-danger"><i class="yo fas fa-hand-point-left"></i>                   Back</a>                                   <span id="mybut"> <button class="btn btn-success" onclick="music()">Generate Songs                 <i class="yo fas fa-music"></i></button></span>
+    </section>
+    <script src="\stylesheets\emote.js"></script>
+    <script src="\stylesheets\emote1.js"></script>
+    <script src="\stylesheets\emote2.js"></script>
+    <script src="\stylesheets\emote3.js"></script>
+</body>
+</html>
